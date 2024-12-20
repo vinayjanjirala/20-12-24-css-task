@@ -1,0 +1,98 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.outline{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+    
+}
+.container{
+    border: 2px solid black;
+    width: 60vw;
+    height: 70vh;
+    position: relative;
+}
+
+.switch{
+    border: 2px solid black;
+    padding: 20px;
+    width: 20%;
+    color: black;
+    background-color: skyblue;
+    cursor: pointer;
+    
+}
+.switch-1{
+    position: absolute;
+    top: 10%;
+    left: 7%;
+}
+.switch-2{
+    position: absolute;
+    top: 10%;
+    left: 29%;
+}
+.switch-3{
+    position: absolute;
+    top: 10%;
+    left: 51%;
+}
+.switch-4{
+    position: absolute;
+    top: 10%;
+    left: 75%;
+}
+.photo{
+    width: 35%;
+    height: 50%;
+    background-color: white;
+    position: absolute;
+    top: 43%;
+    left: 35%;
+    border-radius: 50%;
+    object-fit: cover;
+}
+ .switch-1:hover~.photo{
+    animation-name: fan;
+    animation-iteration-count: infinite;
+    animation-duration: 1.5s;
+    animation-timing-function: linear;
+    transition: 3s ease;
+}
+.switch-2:hover~.photo{
+    animation-name: fan;
+    animation-iteration-count: infinite;
+    animation-duration: 1s;
+    animation-timing-function: linear;
+    transition: 3s ease;
+}
+.switch-3:hover~.photo{
+    animation-name: fan;
+    animation-iteration-count: infinite;
+    animation-duration: 0.5s;
+    animation-timing-function: linear;
+    transition: 2s ease;
+}
+.switch-4:hover~.photo{
+    animation-name: fan;
+    animation-iteration-count: infinite;
+    animation-duration: 0.2s;
+    animation-timing-function: linear;
+    transition: 2s ease;
+}
+@keyframes fan {
+    from{
+
+       
+    }
+    to{
+        transform: rotate(360deg);
+        
+    }
+}
